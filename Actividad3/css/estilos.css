@@ -1,7 +1,6 @@
 * {
     text-align: center;
     margin-top: 20px;
-    background-color: lavender;
 }
 
 
@@ -35,10 +34,11 @@ table {
  .div2 {
     font-weight: normal;
     font-weight: bold;
+    
  }
 
  #link1 {
-     color: red;
+     color:antiquewhite;
  }
 
  #link2 {
@@ -46,7 +46,7 @@ table {
  }
 
  #link3 {
-    color:teal;
+    color:antiquewhite;
  }
 
  #link4 {
@@ -55,11 +55,22 @@ table {
 
  .imagenes {
      margin-top: 50px;
-     margin-right: 50px;
+     margin-right: 100px;
  }
 
  .titulo{
     text-align: center; 
-    margin-top: 10px;
-    margin-left: 155px;
+    margin-top: 5px;
+    margin-left: 100px;
+ } 
+ 
+ .bot{
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 120px;
  }
+
+ #btnAdmin{
+     color: yellow;
+ }
+
