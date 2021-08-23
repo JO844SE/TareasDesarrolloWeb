@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>pagina</title>
+</head>
+
+<body>
+    <div class="alert alert-info"> Implementación de bootstrap</div>
+    <img src="imagen.png" align="right" width="100px" eigth="200px" class="img-thumbnail">
+    <div class="titulo">
+        <h1><small> Bienvenidos </small></h1><br>
+    </div>
+        <div class="bot">
+        <button type="button" class="btn btn-default btn-danger"><p class="lead"><a href="{% url 'app1:home' %}" id="link1">Home</a></p></button>
+        <button type="button" class="btn btn-info"> <p class="lead"><a href="{% url 'app1:estudiantes' %}" id="link2">Estudiantes</a> </p></button>
+        <button type="button" class="btn btn-primary"><p class="lead"> <a href="{% url 'app1:administradores' %}" id="link3">Administradores</a></p></button>
+        <button type="button" class="btn btn-warning"><p class="lead"> <a href="{% url 'app1:info' %}" id="link4">Acerca de</a></p></button>
+        <button type="button" class="btn btn-warning"><p class="lead"> <a href="{% url 'app1:creditos' %}" id="link4">Creditos</a></p></button>
+    </div>
+       <!--- <h2>
+            <p class="lead"><a href="home.html" id="link1">Home</a> | <a href="estudiantes.html" id="link2">Estudiantes</a> | <a
+                    href="administradores.html" id="link3">Administradores</a> | <a href="info.html" id="link4">Acerca
+                    de</a></p>
+        </h2>
+        --->
+    
+    <br><br>
+    <h1><small>Información</small></h1>
+    <br>
+    <h4><strong> 1. Presiona home para visualizar la información de nuestra página</strong></h4>
+
+
+    <h4><strong> 2. Al presionar en Estudiantes y administradores se mostrara una tabla con el<br>listado de estudiantes o
+        administradores</strong></h4>
+    
+
+
+</body>
+
+</html>
