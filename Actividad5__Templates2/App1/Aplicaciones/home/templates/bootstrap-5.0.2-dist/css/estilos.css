@@ -1,0 +1,26 @@
+.importante{
+    color: orange;
+}
+.secundario{
+    color: red;
+}
+#link{
+    color: greenyellow;
+}
+.imagenes{
+    color: blue;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.texto{
+    margin-right: 25px;
+}
+.mensaje{
+    color: yellowgreen;
+}
+.tablas{
+    color: magenta;
+}
+.contenido{
+    color: green;
+}
