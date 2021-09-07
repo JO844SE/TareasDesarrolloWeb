@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <title>Estudiantes</title>
+</head>
+
+<body>
+    <div>
+        <ul class="nav nav-pildoras">
+            <Li><button type="button" class="btn btn-default">
+                    <p class="lead"><a href="{% url 'app1:home' %}" id="link1">Home</a></p>
+                </button> </li>
+            <Li> <button type="button" class="btn btn-default">
+                    <p class="lead"><a href="{% url 'app1:estudiantes' %}" id="link2">Estudiantes</a> </p>
+                </button></li>
+            <Li> <button type="button" class="btn btn-default">
+                    <p class="lead"> <a href="{% url 'app1:administradores' %}" id="link3">Administradores</a></p>
+                </button></li>
+            <Li> <button type="button" class="btn btn-default">
+                    <p class="lead"> <a href="{% url 'app1:info' %}" id="link4">Acerca de</a></p>
+                </button> </li>
+            <Li> <button type="button" class="btn btn-default">
+                    <p class="lead"> <a href="{% url 'app1:creditos' %}" id="link4">Creditos</a></p>
+                </button></li>
+        </Ul>
+        <br><br>
+        <h1><small><center>Listado de estudiantes</center></small> </h1><br><br>
+        <div style="text-align:center;">
+            <table class="table table-striped table-hover ">
+
+                <tr>
+                    <td>No&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>Nombre&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>Apellido</td>
+                </tr>
+
+
+                <tr>
+                    <td>1</td>
+                    <td>José</td>
+                    <td>López</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria</td>
+                    <td>Maldonado</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mario</td>
+                    <td>Lucas</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Julio</td>
+                    <td>Pérez</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Jeimy</td>
+                    <td>García</td>
+                </tr>
+
+            </table>
+        </div>
+</body>
+
+</html>
