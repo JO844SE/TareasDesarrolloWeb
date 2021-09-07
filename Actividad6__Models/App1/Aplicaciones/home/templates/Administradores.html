@@ -1,0 +1,36 @@
+{% extends 'base_2.html' %}
+{%block titulo%} Administradores {% endblock%}
+
+{%block titulo_uno%} <strong>Tabla 1.</strong> {% endblock%}
+{%block Datos_uno%} Datos de Administradores {% endblock%}
+
+{%block Texto_uno%} 
+<strong>Bienvenido a la tabla de Administradores</strong>
+<div class="table-responsive">
+    <div class="container-fluid">
+        <table class="table table-hover table-bordered table-sm">
+            <tbody>
+                <tr>
+                    <th class="tablas">Nombre</th>
+                    <th class="tablas">Apellido</th>
+                    <th class="tablas">Curso</th>
+                </tr>
+                <tr>
+                    <td class="contenido">Ivan</td>
+                    <td class="contenido">De León</td>
+                    <td class="contenido">Desarrollo Web</td>
+                </tr>
+                <tr>
+                    <td class="contenido">Edgar</td>
+                    <td class="contenido">Matul</td>
+                    <td class="contenido">Redes</td>
+                </tr>
+                <tr>
+                    <td class="contenido">Abner</td>
+                    <td class="contenido">Garcia</td>
+                    <td class="contenido">Arquitectura de computadoras</td>
+                </tr>
+            </tbody>                
+        </table>
+    </div>            
+{% endblock%}
