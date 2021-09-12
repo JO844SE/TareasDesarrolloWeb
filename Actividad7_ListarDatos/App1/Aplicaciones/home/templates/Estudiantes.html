@@ -1,0 +1,39 @@
+{% extends 'base_2.html' %}
+{%block titulo%} Estudiantes {% endblock%}
+
+{%block Datos_uno%} Información{% endblock%}
+
+{%block titulo_uno%} <strong>Ver listado de estudiantes</strong> {% endblock%}
+
+{%block Texto_uno%} 
+<strong>Bienvenido a la tabla de Estudiantes</strong>
+<div class="table-responsive">
+    <div class="container-fluid">
+        <table class="table table-hover table-bordered table-sm">
+            <tbody>
+                <tr>
+                    <th class="tablas">Nombre</th>
+                    <th class="tablas">Direccion</th>
+                    <th class="tablas">Carnet</th>
+                    <th class="tablas">Tipo de estudiante</th>
+                    
+                </tr>
+                {% for est in object_list %}
+                <tr>
+                    <td class="contenido">{{ est.nombre }}</td>
+                    <td class="contenido">{{ est.direccion }}</td>
+                    <td class="contenido">{{ est.carnet }}</td>
+                    <td class="contenido">{{ est.tipo }}</td>
+                    
+                </tr>
+                {% endfor %}
+              
+            </tbody>                
+        </table>
+    </div>            
+{% endblock%}
+
+
+
+
+
