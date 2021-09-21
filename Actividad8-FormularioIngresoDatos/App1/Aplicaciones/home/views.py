@@ -41,6 +41,6 @@ class ListarAdmins(ListView):
 
 
 class CrearEstudianteView(CreateView):
-    template_name = 'Estudiantes.html'
+    template_name = 'crear.html'
     form_class = EstudianteForm
     success_url = reverse_lazy('Aplicaciones:home') 

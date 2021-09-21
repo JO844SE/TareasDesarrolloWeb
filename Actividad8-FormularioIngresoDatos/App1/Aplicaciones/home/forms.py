@@ -1,7 +1,7 @@
 from django import forms
-from .models import Administradores
+from .models import Estudiantes
 
 class EstudianteForm(forms.ModelForm):
     class meta:
-        model = Administradores
+        model = Estudiantes
         fields = '___all___'

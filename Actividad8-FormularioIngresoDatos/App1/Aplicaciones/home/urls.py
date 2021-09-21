@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import HomeView, CreditosView, EstudiantesView, AdministradoresView, AcercaDeView, ListarEstudiante, ListarAdmins, CrearEstudianteView
+
+
+
 urlpatterns = [
     path('index/', HomeView.as_view(), name='home'),
     path('Credito/', CreditosView.as_view(), name='creditos'),
@@ -24,5 +27,5 @@ urlpatterns = [
     path('Acerca/', AcercaDeView.as_view(), name='acerca'),
     path('lestudiante/', ListarEstudiante.as_view(), name='estudiantes'),
     path('ladministradores/', ListarAdmins.as_view(), name='administradores'),
-    path('Cestusiantes/', CrearEstudianteView.as_view(), name='estudiantes'),
+    path('crear/', CrearEstudianteView.as_view(), name='crear'),
 ]
