@@ -1,0 +1,17 @@
+{% extends 'base_3.html' %}
+{%block titulo%} Home {% endblock%}
+
+{%block Descripcion%} Bienvenidos a Desarrollo Web {% endblock%}
+
+{%block imagen_titulo%} src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849826_960_720.jpg" {% endblock%} 
+
+{%block feautures%} 
+<h1>Crear Administradores</h1>
+<form method="POST">
+    {% csrf_token %}
+    Nombre {{ form.nombre }}
+    Apellido {{ form.apellido }}    
+    Carnet {{ form.carnet }}
+    <input type="submit" name="Guardar">
+</form>
+{% endblock%}

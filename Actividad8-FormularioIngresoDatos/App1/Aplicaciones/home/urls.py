@@ -15,14 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import HomeView, CreditosView, EstudiantesView, AdministradoresView, AcercaDeView, ListarEstudiante, ListarAdmins, CrearEstudianteView
+from .views import HomeView, CreditosView, EstudiantesView, AdministradoresView, AcercaDeView, ListarEstudiante, ListarAdministradores, CrearEstudianteView, CrearAdminView
+
+
+
 urlpatterns = [
     path('index/', HomeView.as_view(), name='home'),
     path('Credito/', CreditosView.as_view(), name='creditos'),
     path('Estudiantes/', EstudiantesView.as_view(), name='estudiantes'),
     path('Administradores/', AdministradoresView.as_view(), name='administradores'),
     path('Acerca/', AcercaDeView.as_view(), name='acerca'),
-    path('lestudiante/', ListarEstudiante.as_view(), name='estudiantes'),
-    path('ladministradores/', ListarAdmins.as_view(), name='administradores'),
-    path('Cestusiantes/', CrearEstudianteView.as_view(), name='estudiantes'),
+    path('Listaestudiantes/', ListarEstudiante.as_view(), name='estudiantes'),
+    path('ListaAdministradores/', ListarAdministradores.as_view(), name='administradores'),
+    path('FormEstudiante/', CrearEstudianteView.as_view(), name='formestudiante'),
+    path('FormAdmin/', CrearAdminView.as_view(), name='formadmin'),
 ]

@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class Estudiantes(models.Model):
     nombre = models.CharField(max_length=50)
+    apellido = models.CharField(max_length=50, default="")
     direccion = models.CharField(max_length=50)
     carnet = models.CharField(max_length=200)
     tipo = models.ForeignKey(
@@ -44,10 +45,10 @@ class Articulo(models.Model):
 
 class Administradores(models.Model):
     nombre = models.CharField(max_length=30)
-    apellido = models.CharField(max_length=30, default="")
-    telefono = models.CharField(max_length=30, default="")    
+    apellido = models.CharField(max_length=50, default="")
+    carnet = models.CharField(max_length=200, default="")
     creacion = models.DateField(auto_now_add=True)
     actualizacion = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return '%s %s' % (self.nombre,self.apellido)
+        return '%s' % (self.nombre)

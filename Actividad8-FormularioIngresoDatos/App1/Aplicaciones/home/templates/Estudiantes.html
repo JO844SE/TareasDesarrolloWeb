@@ -1,19 +1,9 @@
 {% extends 'base_2.html' %}
 {%block titulo%} Estudiantes {% endblock%}
-{%block formulario%}
-<h2>Registrar nuevo estudiante</h2>
-<form method="POST">
-   
-    Nombre {{ form.nombre }}
-    Apellido {{ form.apellido }}
-    Teléfono {{ form.telefono }}
-    
-    <input type="submit" name="Guardar"
-</form>
-{% endblock%}
+
 {%block Datos_uno%} Información{% endblock%}
 
-{%block titulo_uno%} <strong>Ver listado de estudiantes</strong> {% endblock%}
+{%block titulo_uno%} <strong>Tabla 1.</strong> {% endblock%}
 
 {%block Texto_uno%} 
 <strong>Bienvenido a la tabla de Estudiantes</strong>
@@ -23,6 +13,7 @@
             <tbody>
                 <tr>
                     <th class="tablas">Nombre</th>
+                    <th class="tablas">Apellido</th>
                     <th class="tablas">Direccion</th>
                     <th class="tablas">Carnet</th>
                     <th class="tablas">Tipo de estudiante</th>
@@ -31,19 +22,14 @@
                 {% for est in object_list %}
                 <tr>
                     <td class="contenido">{{ est.nombre }}</td>
+                    <td class="contenido">{{ est.apellido }}</td>
                     <td class="contenido">{{ est.direccion }}</td>
                     <td class="contenido">{{ est.carnet }}</td>
-                    <td class="contenido">{{ est.tipo }}</td>
-                    
+                    <td class="contenido">{{ est.tipo }}</td>                    
                 </tr>
                 {% endfor %}
-              
             </tbody>                
         </table>
     </div>            
 {% endblock%}
-
-
-
-
 
